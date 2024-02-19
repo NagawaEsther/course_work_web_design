@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function findMax() {
+            // Prompt for three inputs
+            var input1 = prompt("Enter the first number:");
+            var input2 = prompt("Enter the second number:");
+            var input3 = prompt("Enter the third number:");
+          
+            // Convert inputs to numbers
+            var num1 = parseFloat(input1);
+            var num2 = parseFloat(input2);
+            var num3 = parseFloat(input3);
+          
+            // Check if the conversion was successful
+            if (isNaN(num1) || isNaN(num2) || isNaN(num3)) {
+              alert("Invalid input. Please enter valid numbers.");
+              return; // Exit the function if input is not valid
+            }
+          
+            // Use Math.max to find the maximum
+            var maxNumber = Math.max(num1, num2, num3);
+          
+            // Display the result
+            alert("The maximum of " + num1 + ", " + num2 + ", and " + num3 + " is: " + maxNumber);
+          }
+          
+          // Call the function to find the maximum of three numbers
+          findMax();
+          
+    </script>
+</body>
+</html>

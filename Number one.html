@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8" />
+  <title>Sum Calculator</title>
+</head>
+
+<body>
+  <script>
+    function calculateSum(number1, number2) {
+      // Convert input to numbers
+      var num1 = parseFloat(number1);
+      var num2 = parseFloat(number2);
+
+      // Check if the conversion was successful
+      if (isNaN(num1) || isNaN(num2)) {
+        // Return an error message if input is not valid
+        return "Invalid input. Please enter valid numbers.";
+      }
+
+      // Calculate the sum
+      var sum = num1 + num2;
+
+      // Return the result
+      return sum;
+    }
+
+    // Example usage
+    var result = calculateSum(5, 10);
+    console.log("Sum:", result);
+  </script>
+</body>
+
+</html>
